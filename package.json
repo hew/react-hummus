@@ -1,0 +1,70 @@
+{
+  "name": "hummus-react",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple React/Webpack Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --history-api-fallback --hot --inline --progress --colors --port 3000",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "test": "eslint client/**"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-class-properties": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3",
+    "file-loader": "^0.8.4",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "normalize.css": "^3.0.3",
+    "postcss-custom-properties": "^5.0.0",
+    "postcss-loader": "^0.8.0",
+    "postcss-modules": "^0.1.3",
+    "raw-loader": "^0.5.1",
+    "rucksack-css": "^0.8.5",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0",
+    "webpack-hot-middleware": "^2.2.0",
+    "webpack-postcss-tools": "^1.1.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.3.19",
+    "classnames": "^2.1.2",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-router": "^2.0.1",
+    "react-hot-loader": "^1.3.0",
+    "rebass": "^0.2.3",
+    "reflexbox": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-runtime",
+      "transform-class-properties"
+    ]
+  },
+  "esformatter": {
+    "plugins": [
+      "esformatter-jsx"
+    ],
+    "quotes": {
+      "type": "single"
+    }
+  }
+}
