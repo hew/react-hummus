@@ -1,3 +1,5 @@
+<a href="https://codeclimate.com/github/hew/react-hummus"><img src="https://codeclimate.com/github/hew/react-hummus/badges/gpa.svg" /></a>
+
 # React Hummus
 
 Mmm. Hummus.
